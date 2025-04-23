@@ -4,8 +4,11 @@ export function Footer() {
     return (
         <div className={styles.footer}>
             <div className={styles.footerApps}>
-                <img src="./assets/various/start.png" className={styles.start} />
-                <div className={styles.app}>
+                <div className={`${styles.app} ${styles.start}`}>
+                    <img src="./assets/various/start.png" />
+                    <b>Start</b>
+                </div>
+                <div className={`${styles.app} ${styles.active}`}>
                     <img src="./icon.png" className={styles.appIcon} />
                     <div className={styles.appText}>
                         Oficina indie
@@ -31,9 +34,10 @@ export function Footer() {
                 </div>
             </div>
             <div className={styles.tray}>
-                <img src="./assets/taskbar-added-images/soundBox.png" className={styles.trayItem} />
-                <img src="./assets/taskbar-added-images/arrow.png" className={styles.trayItem} />
-                <img src="./assets/taskbar-added-images/shieldX.png" className={styles.trayItem} />
+                <div className={styles.trayItems}>
+                    <img src="./assets/taskbar-added-images/task-scheduler.png" className={styles.trayItem} />
+                    <img src="./assets/taskbar-added-images/audio-okay.png" className={styles.trayItem} />
+                </div>
                 <div className={styles.time}>
                     08: 26
                 </div>

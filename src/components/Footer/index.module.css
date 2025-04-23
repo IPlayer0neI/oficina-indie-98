@@ -1,100 +1,116 @@
 .footer {
-    height: 30px;
-    background: linear-gradient(rgb(31, 47, 134) 0px, rgb(49, 101, 196) 3%, rgb(54, 130, 229) 6%, rgb(68, 144, 230) 10%, rgb(56, 131, 229) 12%, rgb(43, 113, 224) 15%, rgb(38, 99, 218) 18%, rgb(35, 91, 214) 20%, rgb(34, 88, 213) 23%, rgb(33, 87, 214) 38%, rgb(36, 93, 219) 54%, rgb(37, 98, 223) 86%, rgb(36, 95, 220) 89%, rgb(33, 88, 212) 92%, rgb(29, 78, 192) 95%, rgb(25, 65, 165) 98%);
     position: fixed;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 27px;
     display: flex;
+    outline: 1px solid rgb(223, 223, 223);
+    ;
+    border-top: 1px solid rgb(255, 255, 255);
+    background: rgb(192, 192, 192);
+    color: black;
 }
 
 .footerApps {
-    height: 100%;
-    flex: 1 1 0%;
-    overflow: hidden;
     display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-}
-
-.start {
+    flex: 1;
     height: 100%;
-    margin-right: 10px;
-    position: relative;
+    min-width: 0;
 }
 
-.start:hover {
-    filter: brightness(105%);
+div.start {
+    flex-shrink: 0;
+    padding: 2px 4px;
+    width: 52px;
 }
 
-.start:hover:active {
-    pointer-events: none;
-    filter: brightness(85%);
+.start img {
+    width: 16px;
+    height: 16px;
 }
 
 .app {
-    flex: 1 1 0%;
-    max-width: 150px;
-    color: rgb(255, 255, 255);
-    border-radius: 2px;
-    margin-top: 2px;
-    padding: 0px 8px;
-    height: 22px;
-    font-size: 11px;
-    background-color: rgb(60, 129, 243);
-    box-shadow: rgba(0, 0, 0, 0.3) -1px 0px inset, rgba(255, 255, 255, 0.2) 1px 1px 1px inset;
-    position: relative;
+    line-height: 14px;
+    padding: 2px;
+    width: 50%;
+    overflow: hidden;
     display: flex;
-    -webkit-box-align: center;
+    flex-direction: row;
     align-items: center;
-}
-
-.app:hover {
-    background-color: rgb(83, 163, 255);
-    box-shadow: rgba(0, 0, 0, 0.3) -1px 0px inset, rgba(255, 255, 255, 0.2) 1px 1px 1px inset;
+    max-width: 200px;
+    text-align: left;
+    outline: none;
+    background-color: rgb(192, 192, 192);
+    color: rgb(0, 0, 0);
+    position: relative;
+    border-color: rgb(223, 223, 223) rgb(128, 128, 128) rgb(128, 128, 128) rgb(223, 223, 223);
+    border-style: solid;
+    border-width: 2px 2px;
+    border-image: url("/assets/various/border.svg") 64 / 2px;
+    margin: 2px;
 }
 
 .app:hover:active {
-    background-color: rgb(30, 82, 183);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 1px 1px inset, rgba(0, 0, 0, 0.7) 1px 0px 1px inset;
+    border-color: rgb(128, 128, 128);
+    border-style: solid;
+    border-width: 2px 2px;
+    border-image: url("/assets/various/border-inset.svg") 64 / 2px;
+}
+
+.active {
+    background: url("/assets/various/checker.png") repeat;
+    image-rendering: pixelated;
+    border-color: rgb(128, 128, 128);
+    border-style: solid;
+    border-width: 2px 2px;
+    border-image: url("/assets/various/border-inset.svg") 64 / 2px;
+    font-weight: bold;
 }
 
 .appIcon {
-    height: 15px;
-    width: 15px;
+    height: 16px;
+    width: 16px;
+    padding-right: 4px;
+    flex: 0 0 auto;
 }
 
 .appText {
-    position: absolute;
-    left: 27px;
-    right: 8px;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
 }
 
 .tray {
-    flex-shrink: 0;
-    background: linear-gradient(rgb(12, 89, 185) 1%, rgb(19, 158, 233) 6%, rgb(24, 181, 242) 10%, rgb(19, 155, 235) 14%, rgb(18, 144, 232) 19%, rgb(13, 141, 234) 63%, rgb(13, 159, 241) 81%, rgb(15, 158, 237) 88%, rgb(17, 155, 233) 91%, rgb(19, 146, 226) 94%, rgb(19, 126, 215) 97%, rgb(9, 91, 201) 100%);
-    border-left: 1px solid rgb(16, 66, 175);
-    box-shadow: rgb(24, 187, 255) 1px 0px 1px inset;
-    padding: 0px 10px;
-    margin-left: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(128, 128, 128) rgb(255, 255, 255) rgb(255, 255, 255) rgb(128, 128, 128);
+    background-color: #c0c0c0;
+    color: rgb(0, 0, 0);
     display: flex;
-    -webkit-box-align: center;
+    flex-direction: row;
     align-items: center;
+    align-content: center;
+    justify-content: center;
+    line-height: 22px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    margin: 2px;
+}
+
+.trayItems {
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
 }
 
 .trayItem {
-    height: 15px;
-    width: 15px;
+    margin-left: 1px;
+    font-size: 12px;
 }
 
 .time {
-    margin: 0px 5px;
-    color: rgb(255, 255, 255);
-    font-size: 11px;
-    font-weight: lighter;
-    text-shadow: none;
-    line-height: normal;
+    width: 60px;
+    text-align: center;
 }

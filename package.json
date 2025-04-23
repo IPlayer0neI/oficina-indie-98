@@ -2,7 +2,7 @@
   "name": "oficina-indie-xp",
   "version": "0.1.0",
   "private": true,
-  "description": "Site oficina indie com alguns estilos do windows XP.",
+  "description": "Site oficina indie com alguns estilos do windows 98.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

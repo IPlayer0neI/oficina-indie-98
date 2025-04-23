@@ -16,13 +16,13 @@ export function Background() {
                 </div>
             </div>
             <div className={styles["shortcut"]}>
-                <img src="./assets/app-icons/background/minesweeper.png" />
+                <img src="./assets/app-icons/background/backgroundminesweeper.png" />
                 <div className={styles["shortcut-label"]}>
                     Minesweeper
                 </div>
             </div>
             <div className={styles["shortcut"]}>
-                <img src="./assets/app-icons/background/winamp.png" />
+                <img src="./assets/app-icons/background/backgroundwinamp.png" />
                 <div className={styles["shortcut-label"]}>
                     Winamp
                 </div>

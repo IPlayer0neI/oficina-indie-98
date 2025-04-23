@@ -1,12 +1,9 @@
 .background {
   width: 100vw;
   height: 100vh;
-  background-image: url("/assets/various/backgroundXP.webp");
-  z-index: -1;
+  background-color: rgba(0, 128, 128, 255);
   position: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  z-index: -1000;
 }
 
 .shortcut {
@@ -27,7 +24,7 @@
   touch-action: manipulation;
 }
 
-.shortcut > img {
+.shortcut>img {
   max-width: 60px;
 }
 
@@ -44,15 +41,18 @@
 
 
 .shortcut-label {
-  text-shadow: 0 1px 2px #000, 0 1px 2px #000, 0 1px 3px #000;
-  text-align: center;
-  color: #fff;
-  white-space: nowrap;
+  margin-top: 5px;
+  font-family: "MS Sans Serif", "Segoe UI", sans-serif;
+  font-size: 10px;
+  background: var(--Background);
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  line-height: 13px;
   overflow: hidden;
   text-overflow: ellipsis;
-  flex-shrink: 0;
-  font-size: 10px;
-  height: 20px;
-  line-height: 20px;
-  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
